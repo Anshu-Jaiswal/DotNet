@@ -31,6 +31,63 @@ public class HomeController : Controller
         HRDBManager.Insert(cmp);
         return View();
     }
+
+     [HttpGet]
+    public IActionResult Delete()
+    {
+        return View();
+    }
+    [HttpPost]
+    public IActionResult Delete(int id){
+        Console.WriteLine(id);
+        HRDBManager.delete(id);
+       return View();
+    }
+    [HttpGet]
+    public IActionResult Update()
+    {
+        return View();
+    }
+    [HttpPost]
+    public IActionResult Update(int id,string Firstname, string Lastname ,string Phone, string Address,string Password){
+        Company cmp = new Company(id,Firstname,Lastname ,Phone,Address,Password);
+        Console.WriteLine(id+Firstname + Lastname + Phone + Address + Password +" In Controller");
+        HRDBManager.Update(cmp);
+       return View();
+    }
+
+     [HttpGet]
+    public IActionResult Display()
+    {
+        return View();
+    }
+    [HttpPost]
+    public IActionResult Display(int id){
+        Company cs = new Company();
+        cs =  HRDBManager.Display(id);
+        Console.WriteLine(cs.id);
+
+        this.ViewData["display"]=cs;
+        return View();
+    }
+
+    
+     [HttpGet]
+    public IActionResult DisplayAll()
+    {
+        List<Company> list = HRDBManager.DisplayAll();
+        this.ViewData["display"]=list;
+        return View();
+    }
+    // [HttpPost]
+    // public IActionResult DisplayAll(){
+    
+    //     // List<Company> list = HRDBManager.DisplayAll();
+    //     // this.ViewData["display"]=list;
+    //     // return View();
+    // }
+
+
     [HttpGet]
     public IActionResult Login(){
         return View();

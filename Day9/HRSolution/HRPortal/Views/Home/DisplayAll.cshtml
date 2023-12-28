@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"]="Display All";
+
+}
+
+  
+<div  class="text-center">
+    @{
+        List<Company>? list =  ViewData["display"] as List<Company>;
+    }
+    
+    @* <p>@cs.id &nbsp;&nbsp;&nbsp;&nbsp;
+        @cs.Firstname &nbsp;&nbsp;&nbsp;&nbsp;
+        @cs.Lastname &nbsp;&nbsp;&nbsp;&nbsp;
+        @cs.Phone &nbsp;&nbsp;&nbsp;&nbsp;
+        @cs.Address &nbsp;&nbsp;&nbsp;&nbsp;
+    </p> *@
+    <table>
+        <thead>
+             <tr>
+                <th>Id</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Phone</th>
+                <th>Address</th>
+             </tr>
+        </thead>
+        <tbody>
+            
+            @{
+                foreach(Company cmp in list)
+                {
+                    <tr>
+            <td>@cmp.id</td>
+            <td>@cmp.Firstname</td>
+            <td>@cmp.Lastname</td>
+            <td>@cmp.Phone</td>
+            <td>@cmp.Address</td>
+            </tr>
+                }
+            }
+            
+        </tbody>
+    </table>
+</div>

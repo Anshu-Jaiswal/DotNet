@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"]="Page Page";
+
+}
+
+  
+<div  class="text-center">
+    @{
+        Company? cs =  ViewData["display"] as Company;
+    }
+    <form method="POST">
+      Enter ID:
+      <input type="text" name="id"/>
+      <button type="submit ">Display</button>
+    </form>
+    <p>@cs.id &nbsp;&nbsp;&nbsp;&nbsp;
+        @cs.Firstname &nbsp;&nbsp;&nbsp;&nbsp;
+        @cs.Lastname &nbsp;&nbsp;&nbsp;&nbsp;
+        @cs.Phone &nbsp;&nbsp;&nbsp;&nbsp;
+        @cs.Address &nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+</div>

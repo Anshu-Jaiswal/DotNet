@@ -7,8 +7,12 @@ public class Company {
     public string Lastname { get; set; } 
     public string Phone { get; set; } 
     public string Address { get; set; } 
-    public string Password { get; set; } 
+    public string Password { get; set; }
+    public int? id { get; set; }
     
+    public Company(){
+        
+    }
     public Company(string Firstname, string Lastname ,string Phone, string Address,string Password)
     {
         this.Firstname=Firstname;
@@ -16,6 +20,23 @@ public class Company {
         this.Phone=Phone;
         this.Address=Address;
         this.Password=Password;
+    }
+     public Company(int id,string Firstname, string Lastname ,string Phone, string Address,string Password)
+    {
+        this.id=id;
+        this.Firstname=Firstname;
+        this.Lastname=Lastname;
+        this.Phone=Phone;
+        this.Address=Address;
+        this.Password=Password;
+    }
 
+    public Company(int id,string Firstname, string Lastname ,string Phone, string Address)
+    {
+        this.id=id;
+        this.Firstname=Firstname;
+        this.Lastname=Lastname;
+        this.Phone=Phone;
+        this.Address=Address;
     }
 }
