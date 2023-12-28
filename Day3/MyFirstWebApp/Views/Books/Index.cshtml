@@ -1,0 +1,25 @@
+@using Novel
+@{
+    ViewData["Title"] = "Novel Page";
+}
+
+<div class="text-center">
+@{ 
+      Books b1= ViewData["books"]as Books;
+        
+}
+
+
+
+
+<h1>Novel Catalog</h1>
+<hr/>
+<img src="../images/n1.png" width="100" height="100"/>
+<p>Id: @b1.id</p>
+<p>Title: @b1.title</p>
+<p>Description:@b1.description</p>
+<p>Price: @b1.price</p>
+<p>Quantity:@b1.quantity</p>
+<button>Add to Cart</button>
+
+</div>
