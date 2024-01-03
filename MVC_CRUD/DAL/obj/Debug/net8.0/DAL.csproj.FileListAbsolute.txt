@@ -1,0 +1,13 @@
+D:\DotNet\DOTNET\MVC_CRUD\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+D:\DotNet\DOTNET\MVC_CRUD\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\DOTNET\MVC_CRUD\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+D:\DotNet\DOTNET\MVC_CRUD\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+D:\DotNet\DOTNET\MVC_CRUD\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+D:\DotNet\DOTNET\MVC_CRUD\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+D:\DotNet\DOTNET\MVC_CRUD\DAL\bin\Debug\net8.0\DAL.deps.json
+D:\DotNet\DOTNET\MVC_CRUD\DAL\bin\Debug\net8.0\DAL.dll
+D:\DotNet\DOTNET\MVC_CRUD\DAL\bin\Debug\net8.0\DAL.pdb
+D:\DotNet\DOTNET\MVC_CRUD\DAL\obj\Debug\net8.0\DAL.dll
+D:\DotNet\DOTNET\MVC_CRUD\DAL\obj\Debug\net8.0\refint\DAL.dll
+D:\DotNet\DOTNET\MVC_CRUD\DAL\obj\Debug\net8.0\DAL.pdb
+D:\DotNet\DOTNET\MVC_CRUD\DAL\obj\Debug\net8.0\ref\DAL.dll
